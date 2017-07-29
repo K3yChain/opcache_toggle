@@ -1,8 +1,7 @@
 #!/bin/bash
 clear
-
-oc_off="oc_files/oc_off"
-oc_on="oc_files/oc_on"
+oc_off="/git/opcache_toggle/oc_files/oc_off"
+oc_on="/git/opcache_toggle/oc_files/oc_on"
 php_ini="/etc/php/7.0/fpm/php.ini"
 restart_command="systemctl restart"
 if grep -q "opcache.enable=1" /etc/php/7.0/fpm/php.ini; then
